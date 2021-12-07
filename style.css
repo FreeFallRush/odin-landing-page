@@ -2,19 +2,20 @@
 
 body {
   margin: 0;
+  background-color: #1F2937;
+  font-family: 'Roboto Slab', serif;
 }
 #hero {
   display: flex;
-  background-color: #1F2937;
-  padding:15px;
-   
+  padding:25px;
+
 }
 #menu {
   width:350px;
   order:3;
   margin-left: auto;
-  font-family: 'Roboto Slab', serif;
   font-size: 18px;
+  
 }
 ol {
   display: flex;
@@ -27,13 +28,14 @@ li {
   
   
 }
-li a {
+li a, a {
   text-decoration: none;
-  color:#fff;
+  color: #E5E7EB;
 }
-li a:hover {
-  color: rgb(168, 168, 168);
+li a:hover, a:hover {
+  color: #3882F6;
 }
+
 #logo-img {
   width: 100px;
   height: auto;
@@ -47,3 +49,63 @@ li a:hover {
   -ms-transform: scale(1.2) rotate(-711deg) ;
   transform: scale(1.2) rotate(-711deg) ;
 }
+
+#hero-about {
+  display: flex;
+  padding: 65px 35px;
+  
+  
+}
+.about-text {
+padding-bottom: 35px;
+}
+h1 {
+  font-size: 48px;  
+  color: #F9FAF8;
+  font-weight: 900;
+}
+
+h4 {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 400;
+}
+
+.button {
+  background-color: #3882F6;
+  color: #E5E7EB;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 17px;
+  transition-duration: 0.4s;
+}
+.button:hover {
+    background-color: #E5E7EB; 
+    color: #3882F6;
+}
+
+#about-img img{
+  width: 750px;
+  height: auto;
+}
+figcaption {
+    text-align: center;
+}
+figcaption a {
+    color:#E5E7EB;
+    text-decoration: none;    
+}
+figcaption a:hover {
+    color:#3882F6;
+}
+
+@media (max-width: 800px) {
+    #hero-about {
+      flex-direction: column;
+    }
+    #about-img img {
+        width: 100%;
+        height: auto;
+      }
+  }
