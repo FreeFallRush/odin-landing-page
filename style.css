@@ -149,6 +149,39 @@ blockquote figcaption {
     text-align: right;
     font-weight: 900;
 }
+#find-more {
+    display: flex;
+    margin: 100px 200px 100px 200px;
+    justify-content: space-around;
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding: 20px 0 20px;    
+    align-items: center;
+}
+
+h4 {
+    font-size: 24px;
+    color: #E5E7EB;
+    margin-bottom: 5px;
+}
+#find-more p {
+    margin-top: 0;
+    color: #E5E7EB;
+    
+}
+#find-more .button{
+  border: 1px solid #E5E7EB;
+  color: #E5E7EB;
+  height: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 17px;
+  transition-duration: 0.4s;
+}
+#find-more .button:hover {
+    color: #3882F6;
+}
+
 
 @media (max-width: 800px) {
     #hero-about, #cursors-gallery {
@@ -161,5 +194,13 @@ blockquote figcaption {
       }
       blockquote {
         padding:10px 10px;
+    }
+    #find-more {
+        flex-direction: column;
+      align-items: center;
+      margin: 15px 20px 10px 20px;
+    }
+    .more-text {
+        text-align: center;
     }
   }
