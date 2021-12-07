@@ -2,13 +2,13 @@
 
 body {
   margin: 0;
-  background-color: #1F2937;
+  
   font-family: 'Roboto Slab', serif;
 }
 #hero {
   display: flex;
   padding:25px;
-
+  background-color: #1F2937;
 }
 #menu {
   width:350px;
@@ -53,7 +53,7 @@ li a:hover, a:hover {
 #hero-about {
   display: flex;
   padding: 65px 35px;
-  
+  background-color: #1F2937;
   
 }
 .about-text {
@@ -103,7 +103,7 @@ figcaption a:hover, .cursor-img a:hover {
 
 #cursors-examples {
     background-color: #fff;
-    padding: 10px 30px;
+    padding: 10px 50px 90px;
 }
 
 h2 {
@@ -113,6 +113,7 @@ h2 {
     text-align: center;
 }
 #cursors-gallery {
+    padding-top: 15px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -123,7 +124,7 @@ h2 {
     border-radius: 10px;
 }
 .cursor-img img:hover {
-    border: 1px solid;
+  border: 1px solid;
   padding: 10px;
   box-shadow: 5px 10px #888888;
 }
@@ -131,7 +132,23 @@ h2 {
    color: #000;
 }
 
-
+#quote {
+    background-color: #E5E7EB; 
+    padding-bottom: 10px;
+}
+blockquote {
+    padding:100px 280px;
+}
+blockquote p{
+    font-size: 36px;
+    font-weight: 100;
+    color: #1F2937;
+}
+blockquote figcaption {
+    font-size: 20px;
+    text-align: right;
+    font-weight: 900;
+}
 
 @media (max-width: 800px) {
     #hero-about, #cursors-gallery {
@@ -142,4 +159,7 @@ h2 {
         width: 100%;
         height: auto;
       }
+      blockquote {
+        padding:10px 10px;
+    }
   }
