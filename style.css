@@ -194,10 +194,31 @@ h4 {
 
 @media (max-width: 800px) {
     #logo-img {
-        width: 50px;
-        height: 35px;
+        align-items: center;
+        width: 60px;
+        height: 43px;
     }
-    #hero-about,
+    #hero-about {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2px;
+    }
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-text .button {
+        margin:0 45px 0;
+        text-align: center;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 26px;
+
+    }
     #cursors-gallery {
         flex-direction: column;
         align-items: center;
@@ -213,6 +234,7 @@ h4 {
         flex-direction: column;
         align-items: center;
         margin: 15px 20px 10px 20px;
+        padding:0 6px 18px;
     }
     .more-text {
         text-align: center;
